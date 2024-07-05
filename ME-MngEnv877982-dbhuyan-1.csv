@@ -1,0 +1,417 @@
+Line
+#################################################################################
+WAF Assessment results for subscription ME-MngEnv877982-dbhuyan-1
+#################################################################################
+
+###########################################
+WAF Assessment Results for Storage Accounts
+###########################################
+
+----- Storage Account - azurefunction221 -----
+
+Bad: Soft Delete is NOT active for azurefunction221
+Good: Public access is disabled for blob data on storage account azurefunction221.
+Informational: Versioning is not enabled for storage account azurefunction221. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account azurefunction221 is NOT set to Deny.
+Good: Firewall is active for storage account azurefunction221.
+Good: Blob Public Access is disabled for storage account azurefunction221.
+Good: Microsoft Azure Services are whitelisted for storage account azurefunction221.
+Good: Secure Transfer (HTTPS) is enforced for storage account azurefunction221.
+Bad: Shared Key authorization is NOT disabled for storage account azurefunction221.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account azurefunction221.
+Good: Defender for Storage is enabled for storage account azurefunction221.
+Informational: Storage account azurefunction221 has an access tier of ''.
+Bad: No Lifecycle policy found for storage account azurefunction221.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account azurefunction221.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account azurefunction221.
+Bad: No Private Endpoint is attached to storage account azurefunction221.
+Bad: Storage account azurefunction221 is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account azurefunction221 has an average score of 53.2 %.
+
+
+----- Storage Account - devopsboardrg9558 -----
+
+Bad: Soft Delete is NOT active for devopsboardrg9558
+Good: Public access is disabled for blob data on storage account devopsboardrg9558.
+Informational: Versioning is not enabled for storage account devopsboardrg9558. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account devopsboardrg9558 is NOT set to Deny.
+Good: Firewall is active for storage account devopsboardrg9558.
+Good: Blob Public Access is disabled for storage account devopsboardrg9558.
+Good: Microsoft Azure Services are whitelisted for storage account devopsboardrg9558.
+Good: Secure Transfer (HTTPS) is enforced for storage account devopsboardrg9558.
+Bad: Shared Key authorization is NOT disabled for storage account devopsboardrg9558.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account devopsboardrg9558.
+Good: Defender for Storage is enabled for storage account devopsboardrg9558.
+Informational: Storage account devopsboardrg9558 has an access tier of ''.
+Bad: No Lifecycle policy found for storage account devopsboardrg9558.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account devopsboardrg9558.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account devopsboardrg9558.
+Bad: No Private Endpoint is attached to storage account devopsboardrg9558.
+Bad: Storage account devopsboardrg9558 is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account devopsboardrg9558 has an average score of 53.2 %.
+
+
+----- Storage Account - lcmazurestrgdemo001 -----
+
+Bad: Soft Delete is NOT active for lcmazurestrgdemo001
+Good: Public access is disabled for blob data on storage account lcmazurestrgdemo001.
+Informational: Versioning is not enabled for storage account lcmazurestrgdemo001. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account lcmazurestrgdemo001 is NOT set to Deny.
+Good: Firewall is active for storage account lcmazurestrgdemo001.
+Good: Blob Public Access is disabled for storage account lcmazurestrgdemo001.
+Good: Microsoft Azure Services are whitelisted for storage account lcmazurestrgdemo001.
+Good: Secure Transfer (HTTPS) is enforced for storage account lcmazurestrgdemo001.
+Bad: Shared Key authorization is NOT disabled for storage account lcmazurestrgdemo001.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account lcmazurestrgdemo001.
+Good: Defender for Storage is enabled for storage account lcmazurestrgdemo001.
+Informational: Storage account lcmazurestrgdemo001 has an access tier of 'Hot'. Depending on usage demand, costs could be reduced by choosing a lower tier.
+Bad: No Lifecycle policy found for storage account lcmazurestrgdemo001.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account lcmazurestrgdemo001.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account lcmazurestrgdemo001.
+Bad: No Private Endpoint is attached to storage account lcmazurestrgdemo001.
+Bad: Storage account lcmazurestrgdemo001 is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account lcmazurestrgdemo001 has an average score of 53.2 %.
+
+
+----- Storage Account - rabofunctionrg8bd1 -----
+
+Bad: Soft Delete is NOT active for rabofunctionrg8bd1
+Good: Public access is disabled for blob data on storage account rabofunctionrg8bd1.
+Informational: Versioning is not enabled for storage account rabofunctionrg8bd1. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account rabofunctionrg8bd1 is NOT set to Deny.
+Good: Firewall is active for storage account rabofunctionrg8bd1.
+Good: Blob Public Access is disabled for storage account rabofunctionrg8bd1.
+Good: Microsoft Azure Services are whitelisted for storage account rabofunctionrg8bd1.
+Good: Secure Transfer (HTTPS) is enforced for storage account rabofunctionrg8bd1.
+Bad: Shared Key authorization is NOT disabled for storage account rabofunctionrg8bd1.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account rabofunctionrg8bd1.
+Good: Defender for Storage is enabled for storage account rabofunctionrg8bd1.
+Informational: Storage account rabofunctionrg8bd1 has an access tier of ''.
+Bad: No Lifecycle policy found for storage account rabofunctionrg8bd1.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account rabofunctionrg8bd1.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account rabofunctionrg8bd1.
+Bad: No Private Endpoint is attached to storage account rabofunctionrg8bd1.
+Bad: Storage account rabofunctionrg8bd1 is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account rabofunctionrg8bd1 has an average score of 53.2 %.
+
+
+----- Storage Account - rabofunctionrg8d0b -----
+
+Bad: Soft Delete is NOT active for rabofunctionrg8d0b
+Good: Public access is disabled for blob data on storage account rabofunctionrg8d0b.
+Informational: Versioning is not enabled for storage account rabofunctionrg8d0b. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account rabofunctionrg8d0b is NOT set to Deny.
+Good: Firewall is active for storage account rabofunctionrg8d0b.
+Good: Blob Public Access is disabled for storage account rabofunctionrg8d0b.
+Good: Microsoft Azure Services are whitelisted for storage account rabofunctionrg8d0b.
+Good: Secure Transfer (HTTPS) is enforced for storage account rabofunctionrg8d0b.
+Bad: Shared Key authorization is NOT disabled for storage account rabofunctionrg8d0b.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account rabofunctionrg8d0b.
+Good: Defender for Storage is enabled for storage account rabofunctionrg8d0b.
+Informational: Storage account rabofunctionrg8d0b has an access tier of ''.
+Bad: No Lifecycle policy found for storage account rabofunctionrg8d0b.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account rabofunctionrg8d0b.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account rabofunctionrg8d0b.
+Bad: No Private Endpoint is attached to storage account rabofunctionrg8d0b.
+Bad: Storage account rabofunctionrg8d0b is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account rabofunctionrg8d0b has an average score of 53.2 %.
+
+
+----- Storage Account - rabofunctionrg9f6d -----
+
+Bad: Soft Delete is NOT active for rabofunctionrg9f6d
+Good: Public access is disabled for blob data on storage account rabofunctionrg9f6d.
+Informational: Versioning is not enabled for storage account rabofunctionrg9f6d. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account rabofunctionrg9f6d is NOT set to Deny.
+Good: Firewall is active for storage account rabofunctionrg9f6d.
+Good: Blob Public Access is disabled for storage account rabofunctionrg9f6d.
+Good: Microsoft Azure Services are whitelisted for storage account rabofunctionrg9f6d.
+Good: Secure Transfer (HTTPS) is enforced for storage account rabofunctionrg9f6d.
+Bad: Shared Key authorization is NOT disabled for storage account rabofunctionrg9f6d.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account rabofunctionrg9f6d.
+Good: Defender for Storage is enabled for storage account rabofunctionrg9f6d.
+Informational: Storage account rabofunctionrg9f6d has an access tier of ''.
+Bad: No Lifecycle policy found for storage account rabofunctionrg9f6d.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account rabofunctionrg9f6d.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account rabofunctionrg9f6d.
+Bad: No Private Endpoint is attached to storage account rabofunctionrg9f6d.
+Bad: Storage account rabofunctionrg9f6d is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account rabofunctionrg9f6d has an average score of 53.2 %.
+
+
+----- Storage Account - rabofunctionrgbad4 -----
+
+Bad: Soft Delete is NOT active for rabofunctionrgbad4
+Good: Public access is disabled for blob data on storage account rabofunctionrgbad4.
+Informational: Versioning is not enabled for storage account rabofunctionrgbad4. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account rabofunctionrgbad4 is NOT set to Deny.
+Good: Firewall is active for storage account rabofunctionrgbad4.
+Good: Blob Public Access is disabled for storage account rabofunctionrgbad4.
+Good: Microsoft Azure Services are whitelisted for storage account rabofunctionrgbad4.
+Good: Secure Transfer (HTTPS) is enforced for storage account rabofunctionrgbad4.
+Bad: Shared Key authorization is NOT disabled for storage account rabofunctionrgbad4.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account rabofunctionrgbad4.
+Good: Defender for Storage is enabled for storage account rabofunctionrgbad4.
+Informational: Storage account rabofunctionrgbad4 has an access tier of ''.
+Bad: No Lifecycle policy found for storage account rabofunctionrgbad4.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account rabofunctionrgbad4.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account rabofunctionrgbad4.
+Bad: No Private Endpoint is attached to storage account rabofunctionrgbad4.
+Bad: Storage account rabofunctionrgbad4 is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account rabofunctionrgbad4 has an average score of 53.2 %.
+
+
+----- Storage Account - rabofunctionrgbe81 -----
+
+Bad: Soft Delete is NOT active for rabofunctionrgbe81
+Good: Public access is disabled for blob data on storage account rabofunctionrgbe81.
+Informational: Versioning is not enabled for storage account rabofunctionrgbe81. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account rabofunctionrgbe81 is NOT set to Deny.
+Good: Firewall is active for storage account rabofunctionrgbe81.
+Good: Blob Public Access is disabled for storage account rabofunctionrgbe81.
+Good: Microsoft Azure Services are whitelisted for storage account rabofunctionrgbe81.
+Good: Secure Transfer (HTTPS) is enforced for storage account rabofunctionrgbe81.
+Bad: Shared Key authorization is NOT disabled for storage account rabofunctionrgbe81.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account rabofunctionrgbe81.
+Good: Defender for Storage is enabled for storage account rabofunctionrgbe81.
+Informational: Storage account rabofunctionrgbe81 has an access tier of ''.
+Bad: No Lifecycle policy found for storage account rabofunctionrgbe81.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account rabofunctionrgbe81.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account rabofunctionrgbe81.
+Bad: No Private Endpoint is attached to storage account rabofunctionrgbe81.
+Bad: Storage account rabofunctionrgbe81 is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account rabofunctionrgbe81 has an average score of 53.2 %.
+
+
+----- Storage Account - aiteststoragedemo001 -----
+
+Good: Soft Delete is active for aiteststoragedemo001
+Good: Public access is disabled for blob data on storage account aiteststoragedemo001.
+Informational: Versioning is not enabled for storage account aiteststoragedemo001. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account aiteststoragedemo001 is NOT set to Deny.
+Good: Firewall is active for storage account aiteststoragedemo001.
+Good: Blob Public Access is disabled for storage account aiteststoragedemo001.
+Good: Microsoft Azure Services are whitelisted for storage account aiteststoragedemo001.
+Good: Secure Transfer (HTTPS) is enforced for storage account aiteststoragedemo001.
+Bad: Shared Key authorization is NOT disabled for storage account aiteststoragedemo001.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account aiteststoragedemo001.
+Good: Defender for Storage is enabled for storage account aiteststoragedemo001.
+Informational: Storage account aiteststoragedemo001 has an access tier of 'Hot'. Depending on usage demand, costs could be reduced by choosing a lower tier.
+Bad: No Lifecycle policy found for storage account aiteststoragedemo001.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account aiteststoragedemo001.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account aiteststoragedemo001.
+Bad: No Private Endpoint is attached to storage account aiteststoragedemo001.
+Bad: Storage account aiteststoragedemo001 is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account aiteststoragedemo001 has an average score of 58.7 %.
+
+
+----- Storage Account - azlcm2storageaccdev -----
+
+Bad: Soft Delete is NOT active for azlcm2storageaccdev
+Good: Public access is disabled for blob data on storage account azlcm2storageaccdev.
+Informational: Versioning is not enabled for storage account azlcm2storageaccdev. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account azlcm2storageaccdev is NOT set to Deny.
+Good: Firewall is active for storage account azlcm2storageaccdev.
+Good: Blob Public Access is disabled for storage account azlcm2storageaccdev.
+Good: Microsoft Azure Services are whitelisted for storage account azlcm2storageaccdev.
+Good: Secure Transfer (HTTPS) is enforced for storage account azlcm2storageaccdev.
+Bad: Shared Key authorization is NOT disabled for storage account azlcm2storageaccdev.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account azlcm2storageaccdev.
+Good: Defender for Storage is enabled for storage account azlcm2storageaccdev.
+Informational: Storage account azlcm2storageaccdev has an access tier of 'Hot'. Depending on usage demand, costs could be reduced by choosing a lower tier.
+Bad: No Lifecycle policy found for storage account azlcm2storageaccdev.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account azlcm2storageaccdev.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account azlcm2storageaccdev.
+Bad: No Private Endpoint is attached to storage account azlcm2storageaccdev.
+Bad: Storage account azlcm2storageaccdev is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account azlcm2storageaccdev has an average score of 53.2 %.
+
+
+----- Storage Account - azlcmdemostorageaccpoc -----
+
+Bad: Soft Delete is NOT active for azlcmdemostorageaccpoc
+Good: Public access is disabled for blob data on storage account azlcmdemostorageaccpoc.
+Informational: Versioning is not enabled for storage account azlcmdemostorageaccpoc. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account azlcmdemostorageaccpoc is NOT set to Deny.
+Good: Firewall is active for storage account azlcmdemostorageaccpoc.
+Good: Blob Public Access is disabled for storage account azlcmdemostorageaccpoc.
+Good: Microsoft Azure Services are whitelisted for storage account azlcmdemostorageaccpoc.
+Good: Secure Transfer (HTTPS) is enforced for storage account azlcmdemostorageaccpoc.
+Bad: Shared Key authorization is NOT disabled for storage account azlcmdemostorageaccpoc.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account azlcmdemostorageaccpoc.
+Good: Defender for Storage is enabled for storage account azlcmdemostorageaccpoc.
+Informational: Storage account azlcmdemostorageaccpoc has an access tier of 'Hot'. Depending on usage demand, costs could be reduced by choosing a lower tier.
+Bad: No Lifecycle policy found for storage account azlcmdemostorageaccpoc.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account azlcmdemostorageaccpoc.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account azlcmdemostorageaccpoc.
+Bad: No Private Endpoint is attached to storage account azlcmdemostorageaccpoc.
+Bad: Storage account azlcmdemostorageaccpoc is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account azlcmdemostorageaccpoc has an average score of 53.2 %.
+
+
+----- Storage Account - azlcmstorageaccdev -----
+
+Bad: Soft Delete is NOT active for azlcmstorageaccdev
+Good: Public access is disabled for blob data on storage account azlcmstorageaccdev.
+Informational: Versioning is not enabled for storage account azlcmstorageaccdev. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account azlcmstorageaccdev is NOT set to Deny.
+Good: Firewall is active for storage account azlcmstorageaccdev.
+Good: Blob Public Access is disabled for storage account azlcmstorageaccdev.
+Good: Microsoft Azure Services are whitelisted for storage account azlcmstorageaccdev.
+Good: Secure Transfer (HTTPS) is enforced for storage account azlcmstorageaccdev.
+Bad: Shared Key authorization is NOT disabled for storage account azlcmstorageaccdev.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account azlcmstorageaccdev.
+Good: Defender for Storage is enabled for storage account azlcmstorageaccdev.
+Informational: Storage account azlcmstorageaccdev has an access tier of 'Hot'. Depending on usage demand, costs could be reduced by choosing a lower tier.
+Bad: No Lifecycle policy found for storage account azlcmstorageaccdev.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account azlcmstorageaccdev.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account azlcmstorageaccdev.
+Bad: No Private Endpoint is attached to storage account azlcmstorageaccdev.
+Bad: Storage account azlcmstorageaccdev is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account azlcmstorageaccdev has an average score of 53.2 %.
+
+
+----- Storage Account - csb1003200238eebf4a -----
+
+Bad: Soft Delete is NOT active for csb1003200238eebf4a
+Good: Public access is disabled for blob data on storage account csb1003200238eebf4a.
+Informational: Versioning is not enabled for storage account csb1003200238eebf4a. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account csb1003200238eebf4a is NOT set to Deny.
+Good: Firewall is active for storage account csb1003200238eebf4a.
+Good: Blob Public Access is disabled for storage account csb1003200238eebf4a.
+Good: Microsoft Azure Services are whitelisted for storage account csb1003200238eebf4a.
+Good: Secure Transfer (HTTPS) is enforced for storage account csb1003200238eebf4a.
+Bad: Shared Key authorization is NOT disabled for storage account csb1003200238eebf4a.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account csb1003200238eebf4a.
+Good: Defender for Storage is enabled for storage account csb1003200238eebf4a.
+Informational: Storage account csb1003200238eebf4a has an access tier of 'Hot'. Depending on usage demand, costs could be reduced by choosing a lower tier.
+Bad: No Lifecycle policy found for storage account csb1003200238eebf4a.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account csb1003200238eebf4a.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account csb1003200238eebf4a.
+Bad: No Private Endpoint is attached to storage account csb1003200238eebf4a.
+Bad: Storage account csb1003200238eebf4a is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account csb1003200238eebf4a has an average score of 53.2 %.
+
+
+----- Storage Account - devfuncappissues -----
+
+Bad: Soft Delete is NOT active for devfuncappissues
+Good: Public access is disabled for blob data on storage account devfuncappissues.
+Informational: Versioning is not enabled for storage account devfuncappissues. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account devfuncappissues is NOT set to Deny.
+Good: Firewall is active for storage account devfuncappissues.
+Good: Blob Public Access is disabled for storage account devfuncappissues.
+Good: Microsoft Azure Services are whitelisted for storage account devfuncappissues.
+Good: Secure Transfer (HTTPS) is enforced for storage account devfuncappissues.
+Bad: Shared Key authorization is NOT disabled for storage account devfuncappissues.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account devfuncappissues.
+Good: Defender for Storage is enabled for storage account devfuncappissues.
+Informational: Storage account devfuncappissues has an access tier of 'Hot'. Depending on usage demand, costs could be reduced by choosing a lower tier.
+Bad: No Lifecycle policy found for storage account devfuncappissues.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account devfuncappissues.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account devfuncappissues.
+Bad: No Private Endpoint is attached to storage account devfuncappissues.
+Bad: Storage account devfuncappissues is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account devfuncappissues has an average score of 53.2 %.
+
+
+----- Storage Account - devstaticwebstoarge2367 -----
+
+Good: Soft Delete is active for devstaticwebstoarge2367
+Good: Public access is disabled for blob data on storage account devstaticwebstoarge2367.
+Informational: Versioning is not enabled for storage account devstaticwebstoarge2367. Immutability might be enabled on container level, but can not be checked.
+Good: Default internet access for storage account devstaticwebstoarge2367 is set to Deny.
+Good: Firewall is active for storage account devstaticwebstoarge2367.
+Good: Blob Public Access is disabled for storage account devstaticwebstoarge2367.
+Good: Microsoft Azure Services are whitelisted for storage account devstaticwebstoarge2367.
+Good: Secure Transfer (HTTPS) is enforced for storage account devstaticwebstoarge2367.
+Bad: Shared Key authorization is NOT disabled for storage account devstaticwebstoarge2367.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account devstaticwebstoarge2367.
+Good: Defender for Storage is enabled for storage account devstaticwebstoarge2367.
+Informational: Storage account devstaticwebstoarge2367 has an access tier of 'Hot'. Depending on usage demand, costs could be reduced by choosing a lower tier.
+Bad: No Lifecycle policy found for storage account devstaticwebstoarge2367.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account devstaticwebstoarge2367.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account devstaticwebstoarge2367.
+Good: A Private Endpoint is attached to storage account devstaticwebstoarge2367.
+Bad: Storage account devstaticwebstoarge2367 is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account devstaticwebstoarge2367 has an average score of 70.6 %.
+
+
+----- Storage Account - lcmazure123strgdemo001 -----
+
+Bad: Soft Delete is NOT active for lcmazure123strgdemo001
+Good: Public access is disabled for blob data on storage account lcmazure123strgdemo001.
+Informational: Versioning is not enabled for storage account lcmazure123strgdemo001. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account lcmazure123strgdemo001 is NOT set to Deny.
+Good: Firewall is active for storage account lcmazure123strgdemo001.
+Good: Blob Public Access is disabled for storage account lcmazure123strgdemo001.
+Good: Microsoft Azure Services are whitelisted for storage account lcmazure123strgdemo001.
+Good: Secure Transfer (HTTPS) is enforced for storage account lcmazure123strgdemo001.
+Bad: Shared Key authorization is NOT disabled for storage account lcmazure123strgdemo001.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account lcmazure123strgdemo001.
+Good: Defender for Storage is enabled for storage account lcmazure123strgdemo001.
+Informational: Storage account lcmazure123strgdemo001 has an access tier of 'Hot'. Depending on usage demand, costs could be reduced by choosing a lower tier.
+Bad: No Lifecycle policy found for storage account lcmazure123strgdemo001.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account lcmazure123strgdemo001.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account lcmazure123strgdemo001.
+Bad: No Private Endpoint is attached to storage account lcmazure123strgdemo001.
+Bad: Storage account lcmazure123strgdemo001 is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account lcmazure123strgdemo001 has an average score of 53.2 %.
+
+
+----- Storage Account - stgiwvtjg5emsqbk -----
+
+Bad: Soft Delete is NOT active for stgiwvtjg5emsqbk
+Good: Public access is disabled for blob data on storage account stgiwvtjg5emsqbk.
+Informational: Versioning is not enabled for storage account stgiwvtjg5emsqbk. Immutability might be enabled on container level, but can not be checked.
+Bad: Default internet access for storage account stgiwvtjg5emsqbk is NOT set to Deny.
+Good: Firewall is active for storage account stgiwvtjg5emsqbk.
+Good: Blob Public Access is disabled for storage account stgiwvtjg5emsqbk.
+Good: Microsoft Azure Services are whitelisted for storage account stgiwvtjg5emsqbk.
+Good: Secure Transfer (HTTPS) is enforced for storage account stgiwvtjg5emsqbk.
+Bad: Shared Key authorization is NOT disabled for storage account stgiwvtjg5emsqbk.
+Bad: Storage account keys have NOT been regenerated in the past 90 days for storage account stgiwvtjg5emsqbk.
+Good: Defender for Storage is enabled for storage account stgiwvtjg5emsqbk.
+Informational: Storage account stgiwvtjg5emsqbk has an access tier of 'Hot'. Depending on usage demand, costs could be reduced by choosing a lower tier.
+Bad: No Lifecycle policy found for storage account stgiwvtjg5emsqbk.
+Good: TLS 1.2 is the minimum TLS version allowed on storage account stgiwvtjg5emsqbk.
+Bad: Storage Account Infrastructure Encryption is NOT enabled for storage account stgiwvtjg5emsqbk.
+Bad: No Private Endpoint is attached to storage account stgiwvtjg5emsqbk.
+Bad: Storage account stgiwvtjg5emsqbk is NOT encrypted using Customer Managed Keys.
+
+Azure Resource - Storage Account stgiwvtjg5emsqbk has an average score of 53.2 %.
+
+
+##################
+Summary of results
+##################
+
+Total average score for all storage accounts in subscription ME-MngEnv877982-dbhuyan-1 is 54.5 %.
+
+Final Weighted Average by Pillar
+
+Reliability Pillar has an average score of 57.6 %.
+Security Pillar has an average score of 61.6 %.
+Operational Excellence Pillar has an average score of 61.6 %.
+Cost Optimization Pillar has an average score of 50 %.
+Performance Efficiency Pillar has an average score of 0 %.
+Custom Checks has an average score of 31.1 %.
+
+Note that a score of 0 % may indicate that the evaluated resources have no related checks in that pillar.
+The Custom Checks section is not part of the Microsoft WAF, and is used for additional checks.
