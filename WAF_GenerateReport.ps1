@@ -83,14 +83,7 @@ if ( $PSVersionTable.PSVersion.Major -lt 7 )
 }
 
 # Read the csv file content
-$csvContent = Get-Content "$workingDirectory\ME-MngEnv877982-dbhuyan-1.csv"
-
-# Define the path to the CSV file
-$csvFilePath = "$workingDirectory\ME-MngEnv877982-dbhuyan-1.csv"
-
-# Get the content of the CSV file
-$csvContent = Get-Content -Path $csvFilePath
-
+$csvContent = Get-Content $AssessmentReport
 
 #Instantiate PowerPoint variables
 $application = New-Object -ComObject PowerPoint.Application
@@ -174,10 +167,35 @@ $newSlide.Shapes[2].Top -= 150
 ####################### Edit result slide #############################################
 
 $startIndex = 9
-$chunkSize = 23
 
-  # Margin size in points
+  # Loop through the content and create a new slide for each chunk
 for ($i = $startIndex; $i -lt $csvContent.Count; $i += $chunkSize) {
+    
+    # Modify the chunk size depending on the content
+    if ($csvContent[$i+1] -match "WAF Assessment Results for") {
+        $chunkSize = 4
+        Continue
+    }
+    elseif ($csvContent[$i] -match "----- ") {
+        foreach ($line in $csvContent[$i..$csvContent.Count]) {
+            if ($line -match "Azure Resource -") {
+                $chunkSize = $csvContent[$i..$csvContent.Count].IndexOf($line) + 2
+                Break
+            }
+        }
+    }
+    elseif ($csvContent[$i+1] -match "Summary of results") {
+        Break
+    }
+    elseif ($csvContent[$i+1] -match "found for subscription") {
+        $chunkSize = 4
+        Continue
+    }
+    elseif ($csvContent[$i] -match "found for subscription") {
+        $chunkSize = 3
+        Continue
+    }
+
     # Get the next chunk of lines
     $chunk = $csvContent[$i..($i + $chunkSize - 1)]
     $chunk = $chunk.Replace('"', '')
