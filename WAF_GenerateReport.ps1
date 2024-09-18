@@ -2,7 +2,9 @@
 
 #---------------------------------------------------------[Initialisations]--------------------------------------------------------
 # How to run the powershell script:
-#.\WAF_GenerateReport.ps1 -AssessmentReport ".\ME-MngEnv877982-dbhuyan-1.csv"
+#  .\WAF_GenerateReport.ps1 -AssessmentReport ".\ME-MngEnv877982-dbhuyan-1.csv"
+#  .\WAF_GenerateReport.ps1 -AssessmentReport "ME-MngEnv877982-dbhuyan-1 - Copy.csv"
+#  .\WAF_GenerateReport.ps1 -AssessmentReport "acep-p-lz.csv"
 
 param 
 (
@@ -83,10 +85,10 @@ if ( $PSVersionTable.PSVersion.Major -lt 7 )
 }
 
 # Read the csv file content
-$csvContent = Get-Content "$workingDirectory\ME-MngEnv877982-dbhuyan-1.csv"
+$csvContent = Get-Content "$workingDirectory\acep-p-lz.csv"
 
 # Define the path to the CSV file
-$csvFilePath = "$workingDirectory\ME-MngEnv877982-dbhuyan-1.csv"
+$csvFilePath = "$workingDirectory\acep-p-lz.csv"
 
 # Get the content of the CSV file
 $csvContent = Get-Content -Path $csvFilePath
@@ -140,6 +142,40 @@ $stringsToReplaceInSummarySlide = @{ "Cover - Report_Date" = $findings }
 Edit-Slide -Slide $summarySlide -StringToFindAndReplace $stringsToReplaceInSummarySlide
 
 ################## Edit Scores for each Azure Resources #############################################
+# $lines = $csvContent -split "`n"
+
+# # Filter the lines that contain "Azure Resource"
+# $azureResourceScores = $lines | Where-Object { $_ -match "Azure Resource" }
+
+# # Remove "Azure Resources - " from each line
+# $azureResourceScores = $azureResourceScores | ForEach-Object { $_ -replace "Azure Resource -", "" -replace "has an average", "" -replace "of", ":" -replace "of", ":"}
+
+# $azureResourceScores = $azureResourceScores | Join-String -Separator "`n"
+
+# #Write-Host $azureResourceScores
+# # Create a new slide by duplicating the summary slide
+# $newSlide = $reportTemplateObject.Slides.AddSlide($reportTemplateObject.Slides.Count + 1, $summarySlide.CustomLayout)
+
+# # Add the lines to the new slide
+# # Assuming the slide has a single text box shape
+# $newSlide.Shapes[2].TextFrame.TextRange.Text = $azureResourceScores -join "`n"
+
+# # Set the font size and font of the text box
+# $newSlide.Shapes[2].TextFrame.TextRange.Font.Size = 13  # Replace with the actual font size
+# $newSlide.Shapes[2].TextFrame.TextRange.Font.Name = "Arial" 
+
+# $newSlide.Shapes[1].TextFrame.TextRange.Text = "Scores for each Service"  # Replace with the actual font size
+# $newSlide.Shapes[1].TextFrame.TextRange.Font.Name = "Arial" 
+# $newSlide.Shapes[1].TextFrame.TextRange.Font.Size = 18
+    
+#  # Add margins by adjusting the position and size of the text box
+# $newSlide.Shapes[1].Top -= 170 
+# $newSlide.Shapes[1].Left +=40
+# $newSlide.Shapes[2].Top -= 150 
+
+######New Code added for fixing the overflow texts in the summary slide ###################
+######New maximum 20 rows in one slide ###################
+# Split the CSV content into lines
 $lines = $csvContent -split "`n"
 
 # Filter the lines that contain "Azure Resource"
@@ -148,28 +184,36 @@ $azureResourceScores = $lines | Where-Object { $_ -match "Azure Resource" }
 # Remove "Azure Resources - " from each line
 $azureResourceScores = $azureResourceScores | ForEach-Object { $_ -replace "Azure Resource -", "" -replace "has an average", "" -replace "of", ":" -replace "of", ":"}
 
-$azureResourceScores = $azureResourceScores | Join-String -Separator "`n"
+# Define the maximum number of lines per slide
+$maxLinesPerSlide = 20
 
-#Write-Host $azureResourceScores
-# Create a new slide by duplicating the summary slide
-$newSlide = $reportTemplateObject.Slides.AddSlide($reportTemplateObject.Slides.Count + 1, $summarySlide.CustomLayout)
+# Split the lines into chunks
+$chunks = [System.Collections.ArrayList]::new()
+for ($i = 0; $i -lt $azureResourceScores.Count; $i += $maxLinesPerSlide) {
+    $chunks.Add($azureResourceScores[$i..[math]::Min($i + $maxLinesPerSlide - 1, $azureResourceScores.Count - 1)])
+}
 
-# Add the lines to the new slide
-# Assuming the slide has a single text box shape
-$newSlide.Shapes[2].TextFrame.TextRange.Text = $azureResourceScores -join "`n"
+# Loop through each chunk and create a new slide
+foreach ($chunk in $chunks) {
+    # Create a new slide by duplicating the summary slide
+    $newSlide = $reportTemplateObject.Slides.AddSlide($reportTemplateObject.Slides.Count + 1, $summarySlide.CustomLayout)
 
-# Set the font size and font of the text box
-$newSlide.Shapes[2].TextFrame.TextRange.Font.Size = 13  # Replace with the actual font size
-$newSlide.Shapes[2].TextFrame.TextRange.Font.Name = "Arial" 
+    # Add the lines to the new slide
+    $newSlide.Shapes[2].TextFrame.TextRange.Text = $chunk -join "`n"
 
-$newSlide.Shapes[1].TextFrame.TextRange.Text = "Scores for each Service"  # Replace with the actual font size
-$newSlide.Shapes[1].TextFrame.TextRange.Font.Name = "Arial" 
-$newSlide.Shapes[1].TextFrame.TextRange.Font.Size = 18
+    # Set the font size and font of the text box
+    $newSlide.Shapes[2].TextFrame.TextRange.Font.Size = 13  # Replace with the actual font size
+    $newSlide.Shapes[2].TextFrame.TextRange.Font.Name = "Arial" 
+
+    $newSlide.Shapes[1].TextFrame.TextRange.Text = "Scores for each Service"  # Replace with the actual font size
+    $newSlide.Shapes[1].TextFrame.TextRange.Font.Name = "Arial" 
+    $newSlide.Shapes[1].TextFrame.TextRange.Font.Size = 18
     
- # Add margins by adjusting the position and size of the text box
-$newSlide.Shapes[1].Top -= 170 
-$newSlide.Shapes[1].Left +=40
-$newSlide.Shapes[2].Top -= 150 
+    # Add margins by adjusting the position and size of the text box
+    $newSlide.Shapes[1].Top -= 170 
+    $newSlide.Shapes[1].Left += 40
+    $newSlide.Shapes[2].Top -= 150
+}
 
 ####################### Edit result slide #############################################
 
