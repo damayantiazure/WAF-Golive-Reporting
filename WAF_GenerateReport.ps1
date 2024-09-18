@@ -173,7 +173,7 @@ Edit-Slide -Slide $summarySlide -StringToFindAndReplace $stringsToReplaceInSumma
 # $newSlide.Shapes[1].Left +=40
 # $newSlide.Shapes[2].Top -= 150 
 
-######New Code added for fixing the overflow texts in the summary slide ###################
+######New Code added for fixing the overflow texts in the Scores for each Service slides###################
 ######New maximum 20 rows in one slide ###################
 # Split the CSV content into lines
 $lines = $csvContent -split "`n"
